@@ -135,7 +135,7 @@ export default function Home() {
   return (
     <div className="root">
       <Head>
-        <title>Listless | Block lists in one click</title>
+        <title>Listless | Block list subscribers in one click</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -156,7 +156,7 @@ export default function Home() {
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <meta
           name="description"
-          content="Don't like a bad list? Block the list, its author, and every single person who liked it—in one click."
+          content="Harassed by a list? Block the shit out of it."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -167,28 +167,19 @@ export default function Home() {
         <meta
           name="og:description"
           property="og:description"
-          content="Don't like a bad list? Block the list, its author, and every single person who liked it—in one click."
+          content="Harassed by a list? Block the shit out of it."
         />
-        <meta property="og:site_name" content="Listless.XYZ" />
-        <meta property="og:url" content="https://Listless.xyz" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content="foreverlistless.xyz" />
+        <meta property="og:url" content="https://foreverlistless.xyz" />
         <meta
           name="twitter:title"
-          content="Listless | Block lists in one click"
+          content="Listless | Block list subscribers in one click"
         />
         <meta
           name="twitter:description"
           content="Don't like a bad list? Block the list, its author, and every single person who liked it—in one click."
         />
-        <meta name="twitter:site" content="https://Listless.xyz" />
-        <meta
-          property="og:image"
-          content="https://megablock.xyz/twitterimage.png"
-        />
-        <meta
-          name="twitter:image"
-          content="https://megablock.xyz/twitterimage.png"
-        />
+        <meta name="twitter:site" content="https://foreverlistless.xyz" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
           rel="stylesheet"

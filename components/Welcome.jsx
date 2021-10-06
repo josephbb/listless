@@ -2,10 +2,10 @@ const Welcome = ({ setStep }) => {
   return (
     <div className="landing">
       <h1>
-        <span>Listless</span> lets you block harassing lists.
+        <span>Listless</span> lets you block harassing twitter lists.
       </h1>
       <p>
-        Trolls use lists to harass and supress. This site lets you block
+        Trolls use twitter lists to harass and supress. This site lets you block
         all of the of the users that subscribe to a list.
       </p>
       <p>

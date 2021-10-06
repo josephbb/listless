@@ -5,8 +5,9 @@ const client = new Twitter({
   consumer_secret: process.env.TWITTER_CLIENT_SECRET,
 });
 
-export default (req, res) =>
-  new Promise((resolve) => {
+export default (req, res) =>{
+  console.log('My address', process.env.VERCEL_URL)
+  return new Promise((resolve) => {
     client
       .getRequestToken(
         `${process.env.VERCEL_URL || "http://localhost:3000"}/api/auth/twitter`
@@ -19,3 +20,5 @@ export default (req, res) =>
         resolve(res.status(500).json({ error: JSON.stringify(err) }));
       });
   });
+
+}

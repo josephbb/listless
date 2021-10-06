@@ -6,7 +6,7 @@ const client = new Twitter({
 });
 
 export default (req, res) =>{
-  console.log('My address', process.env.VERCEL_URL)
+  console.log('My address', {process.env.VERCEL_URL || "http://localhost:3000"}/api/auth/twitter})
   return new Promise((resolve) => {
     client
       .getRequestToken(

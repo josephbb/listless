@@ -1,4 +1,4 @@
-import Head from "next/head";
+Listlessimport Head from "next/head";
 import TweetEmbed from "react-tweet-embed";
 import { useState, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader"; // Loading animation
@@ -135,7 +135,7 @@ export default function Home() {
   return (
     <div className="root">
       <Head>
-        <title>MegaBlock | Nuke lists in one click</title>
+        <title>Listless | Block lists in one click</title>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -162,25 +162,25 @@ export default function Home() {
         <meta
           name="og:title"
           property="og:title"
-          content="MegaBlock | Nuke lists in one click"
+          content="MegaBlock | Block lists in one click"
         />
         <meta
           name="og:description"
           property="og:description"
           content="Don't like a bad list? Block the list, its author, and every single person who liked it—in one click."
         />
-        <meta property="og:site_name" content="MegaBlock.XYZ" />
-        <meta property="og:url" content="https://megablock.xyz" />
+        <meta property="og:site_name" content="Listless.XYZ" />
+        <meta property="og:url" content="https://Listless.xyz" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="MegaBlock | Nuke lists in one click"
+          content="Listless | Block lists in one click"
         />
         <meta
           name="twitter:description"
           content="Don't like a bad list? Block the list, its author, and every single person who liked it—in one click."
         />
-        <meta name="twitter:site" content="https://megablock.xyz" />
+        <meta name="twitter:site" content="https://Listless.xyz" />
         <meta
           property="og:image"
           content="https://megablock.xyz/twitterimage.png"
@@ -209,17 +209,17 @@ export default function Home() {
       </Head>
       <Modal open={modal} onClose={closeModal} center>
         <div className="modal__header">
-          <h3>Are you sure you want to nuke this list?</h3>
+          <h3>Are you sure you want to block this list?</h3>
         </div>
         <div className="modal__content">
           <p>You will block the author, all people that subscribe to this list, and unfollow all of these individuals.</p>
-          <input value={confirmation} onChange={e => setConfirmation(e.target.value)} placeholder="Type: I confirm I want to nuke" />
+          <input value={confirmation} onChange={e => setConfirmation(e.target.value)} placeholder="Type: I confirm I want to block" />
           <div>
             <button onClick={closeModal}>Cancel</button>
-            {confirmation.toLowerCase() == 'i confirm i want to nuke' ? (
+            {confirmation.toLowerCase() == 'i confirm i want to block' ? (
               <button onClick={handleSubmit} className="megablock_button">
                 {!loading ? (
-                  <span>MegaBlock!</span>
+                  <span>Block!</span>
                 ) : (
                   <CustomLoader />
                 )}

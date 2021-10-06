@@ -1,4 +1,4 @@
-Listlessimport Head from "next/head";
+import Head from "next/head";
 import TweetEmbed from "react-tweet-embed";
 import { useState, useEffect } from "react";
 import BeatLoader from "react-spinners/BeatLoader"; // Loading animation

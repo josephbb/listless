@@ -23,14 +23,12 @@ export default (req, res) =>
       access_token_secret,
     });
 
-    console.log(list_id)
 
     const response = await client.get("lists/show", {
       list_id: list_id
     }).catch((err) => console.error(err));
 
 
-    console.log(response.name)
 
 
     resolve(res.status(200).json({name:response.name}));

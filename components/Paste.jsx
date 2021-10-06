@@ -27,7 +27,7 @@ const Paste = ({ getListInfo, list, openModal, name, session, setList, setStep }
             )}
           </div>
         </div>
-      );    
+      );
 }
 
 export default Paste

@@ -118,7 +118,15 @@ export default function Home() {
       case 1:
         return <Login handleLogin={handleLogin} handleSignOut={handleSignOut} session={session} setStep={setStep} />
       case 2:
-        return <Paste getListInfo={getListInfo} setList={setList} setStep={setStep} />
+        return <Paste getListInfo={getListInfo}
+                      getListInfo={getListInfo}
+                      list={list}
+                      openModal={openModal}
+                      name={name}
+                      session={session}
+                      setList={setList}
+                      setStep={setStep}
+                       setList={setList} />
       case 3:
         return <Success />
     }

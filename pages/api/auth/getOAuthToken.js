@@ -6,11 +6,11 @@ const client = new Twitter({
 });
 
 export default (req, res) =>{
-  console.log('My address', `${process.env.VERCEL_URL || "http://localhost:3000"}/api/auth/twitter`)
+  console.log('My address', `https://${process.env.VERCEL_URL || "localhost:3000"}/api/auth/twitter`)
   return new Promise((resolve) => {
     client
       .getRequestToken(
-        `${process.env.VERCEL_URL || "http://localhost:3000"}/api/auth/twitter`
+        `https://${process.env.VERCEL_URL || "localhost:3000"}/api/auth/twitter`
       )
       .then((resp) => {
         resolve(res.status(200).json({ oauth_token: resp.oauth_token }));

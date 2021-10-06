@@ -162,7 +162,7 @@ export default function Home() {
         <meta
           name="og:title"
           property="og:title"
-          content="MegaBlock | Block lists in one click"
+          content="Forever Listsless | Block lists in one click"
         />
         <meta
           name="og:description"

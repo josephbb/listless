@@ -28,8 +28,5 @@ export default (req, res) =>
       list_id: list_id
     }).catch((err) => console.error(err));
 
-
-
-
-    resolve(res.status(200).json({name:response.name}));
+    resolve(res.status(200).json({name:response.name || ""}));
   });

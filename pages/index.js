@@ -116,7 +116,7 @@ export default function Home() {
       case 0:
         return <Welcome setStep={setStep} />
       case 1:
-        return <Login handleLogin={handleLogin} session={session} setStep={setStep} />
+        return <Login handleLogin={handleLogin} handleSignOut={handleSignOut} session={session} setStep={setStep} />
       case 2:
         return <Paste getListInfo={getListInfo} setList={setList} setStep={setStep} />
       case 3:

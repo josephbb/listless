@@ -1,4 +1,4 @@
-const Login = ({ handleLogin, session, setStep }) => {
+const Login = ({ handleLogin,handleSignOut, session, setStep }) => {
   return (
       <div className="login_twitter landing">
         <h1>Login via Twitter</h1>
@@ -36,7 +36,7 @@ const Login = ({ handleLogin, session, setStep }) => {
             </button>
           )}
         </div>
-      </div>  
+      </div>
   )
 }
 
